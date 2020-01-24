@@ -13,7 +13,7 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
     }
 
     private void addAfter(E data, Node<E> node) {
-        node.next = new Node<E>(data, node.getNext());
+        node.next = new Node<>(data, node.getNext());
         size++;
     }
 
