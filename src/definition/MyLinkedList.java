@@ -4,6 +4,10 @@ import adt.LinkedListADT;
 
 public class MyLinkedList<E> implements LinkedListADT<E> {
 
+    private static class Node<E> {
+
+    }
+
     @Override
     public void add(E item) {
 
