@@ -12,6 +12,11 @@ public class MyLinkedList<E> implements LinkedListADT<E> {
         size++;
     }
 
+    private void addAfter(E data, Node<E> node) {
+        node.next = new Node<E>(data, node.getNext());
+        size++;
+    }
+
     @Override
     public void add(E item) {
 
